@@ -1,15 +1,20 @@
 <template>
   <div id="app">
     <router-view></router-view>
-    <footer-guide/>
+    <footer-guide v-show="$route.meta.showFooter"/>
   </div>
 </template>
 
 <script>
     import FooterGuide from './components/FooterGuide/FooterGuide.vue'
+    import {reqFoodType} from './api'
     export default {
       components: {
         FooterGuide
+      },
+      async mounted () {
+        const result = await reqFoodType()
+        console.log(result)
       }
     }
 </script>
