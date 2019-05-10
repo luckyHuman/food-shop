@@ -4,7 +4,7 @@
         <header-top title="搜索"></header-top>
         <form class="search_form" action="#">
           <input type="search" name="search" placeholder="请输入商家或美食名称" class="search_input">
-          <input type="submit" name="submit" class="search_submit">
+          <input type="submit" name="submit" class="search_submit" value="搜索">
         </form>
       </section>
     </div>

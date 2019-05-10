@@ -91,7 +91,7 @@
     },
     watch: {
       categorys () {
-        this.$nextTick(() => {
+        this.$nextTick(() => {//将回调延迟到下次 DOM 更新循环之后执行
           //创建一个Swiper对象，实现轮播
           const mySwiper = new Swiper ('.swiper-container', {
             loop: true,
